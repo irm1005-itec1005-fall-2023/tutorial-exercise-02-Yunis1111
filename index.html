@@ -259,8 +259,6 @@
           <td>100%</td>
         </tr>
       </tfoot>
-        </tr>
-        </tbody>
       </table>
       <section>
         <h2 id="form">Ward Councillor Evaluation Form</h2>
@@ -271,13 +269,13 @@
             <legend>
               Personal Information
             </legend>
-            <label for="Full Name">Name:</label>
-            <input type="text" id="Full Name"name="Full Name">
+            <label id="FullName">Name:</label>
+            <input type="text" name="Full Name">
             <label for="Email">Email:</label>
-            <input type="text" id="Email"name="Email">
+            <input type="text" id="Email" name="Email">
             <label for="Phone">Phone:</label>
-            <input type="text" id="Phone"name="Phone">
-            <label for="Wards">Wards:</label>
+            <input type="text" id="Phone" name="Phone">
+            <label id="Wards">Wards:</label>
             <select name="Wards" id="wards-select">
               <option value="">--Please choose an option--</option>
               <option value="1">ORLÉANS EAST-CUMBERLAND</option>
@@ -310,61 +308,52 @@
             <legend>
               Feedback
             </legend>
-            <label for="Subject Topic">Subject Topic:</label>
-            <input type="text" id="Subject Title"name="Subject Title">
-              <label for="FeedBack Type">Feedback Type:</label>
+            <label id="SubjectTopic">Subject Topic:</label>
+            <input type="text" id="SubjectTitle" name="Subject Title">
+              <label id="FeedbackType">Feedback Type:</label>
               <input type="radio" id="contactChoice1" name="contact" value="Suggestion"/>
-              <label for="Suggestion">Suggestion</label>
+              <label id="Suggestion">Suggestion</label>
               <input type="radio" id="contactChoice2" name="contact" value="Concern" />
-              <label for="Concern">Concern</label>
+              <label id="Concern">Concern</label>
               <input type="radio" id="contactChoice3" name="contact" value="Appreciation Feedback Details" />
-              <label for="Appreciation Feedback Details">Appreciation Feedback Details</label>
+              <label for="AppreciationFeedbackDetails">Appreciation Feedback Details</label>
               <textarea 
-                id="Appreciation Feedback Details"
+                id="AppreciationFeedbackDetails"
                 name="Appreciation Feedback Details"
                 rows="4"
                 cols="50"
                required>
               </textarea>
-              <label for="Priority Level">Priority Level:</label>
+              <label id="PriorityLevel">Priority Level:</label>
             <select id="priority" name="priority">
               <option value="">Low</option>
               <option value="medium">Medium</option>
               <option value="high">High</option>
               </select>
-              <label for="location">Location (if applicable):</label>
-            <input type="text" id="location" name="location" />
+              <label id="location">Location (if applicable):</label>
+            <input type="text" name="location" />
            </fieldset>
            <fieldset>
             <legend>
               Follow-Up instructions
-              <div>
+            </legend>
                 <input
                   type="checkbox"
-                  id="Response News"
+                  id="ResponseNews"
                   name="Response"
                   value="newsletter" />
-                <label for="subscribeNews">I would like to receive a follow-up response.</label>
-              </input>
-              </div>
-              <div>
-                <select name="Email" id="email-select">
+                <label id="subscribeNews">I would like to receive a follow-up response.</label>
+               <select name="Email" id="email-select">
                   <option value="">Email</option>
                   <option value="">Phone</option>
                   </select>
-              </div>
-            </legend>
-           </fieldset>
-           <fieldset>
-            <legend>
+                </fieldset>
+              <fieldset>
+              <legend>
               Submit Feedback
-             <input
-             type="submit"
-             id="Feedback News"
-             name="Feedback"
-             value="submit" />
-             <label for="feedbackNews">I consent to the use of my feedback.</label>
-            </legend>
+              </legend>
+             <input type="submit" id="feedbackNews" name="Feedback" value="submit" />
+             <label id="FeedbackNews">I consent to the use of my feedback.</label>
            </fieldset>
         </form>
       </section>
@@ -374,7 +363,7 @@
            <h3>Menu</h3>
           <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#about us">About Us</a></li>
+          <li><a href="#aboutus">About Us</a></li>
           <li><a href="#Contact">Contact</a></li>
           </ul>
           </nav>
